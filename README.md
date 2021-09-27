@@ -1,11 +1,11 @@
-# HealthOne Sportcentrum
-Uitwerking Project P5
+# Anytime Fitness Sportcentrum
+Voorbreiding K1
 File structure:
 https://www.ictshore.com/php/php-project-structure/
 
 # Configureer de vhosts
 Je kan je XAMP zo configureren dat je meerdere PHP apps kan hosten op je locale PC. De 
-apps kan je dan draaien op bijvoorbeeld: http://healthone.localhost/, http://app2.localhost/
+apps kan je dan draaien op bijvoorbeeld: http://anytime.localhost/, http://app2.localhost/
 Om dit zo te configureren moet je een aantal configuratie onderdelen bewerken.
 
 ## Windows
@@ -23,9 +23,9 @@ ServerName localhost
 Listen 4001    
 NameVirtualHost *:4001
 <VirtualHost *:80 *:4001>
-    DocumentRoot "C:/xampp/apps/healthone/htdocs"
+    DocumentRoot "C:/xampp/apps/anytime/htdocs"
     ServerName healthone.localhost
-    <Directory "C:/xampp/apps/healthone/htdocs">
+    <Directory "C:/xampp/apps/anytime/htdocs">
         Options Indexes FollowSymLinks ExecCGI Includes
 
         # AllowOverride controls what directives may be placed in .htaccess files.
@@ -44,8 +44,8 @@ NameVirtualHost *:4001
 </VirtualHost>
 ```
 * Restart Apache in de XAMP instance.
-* Verplaats alle inhoud van de repository die je hebt gecloned naar: `C:/xampp/apps/healthone/htdocs`
-* Open nu de `C:/xampp/apps/healthone/htdocs` in PHPStorm.
+* Verplaats alle inhoud van de repository die je hebt gecloned naar: `C:/xampp/apps/anytime/htdocs`
+* Open nu de `C:/xampp/apps/anytime/htdocs` in PHPStorm.
 
 ## MacOS
 Zorg ervoor dat de Virtual host config file ingeladen wordt:
@@ -61,9 +61,9 @@ ServerName localhost
 Listen 4001    
 NameVirtualHost *:4001
 <VirtualHost *:80 *:4001>
-    DocumentRoot "/Applications/XAMPP/xamppfiles/apps/healthone/htdocs"
+    DocumentRoot "/Applications/XAMPP/xamppfiles/apps/anytime/htdocs"
     ServerName healthone.localhost
-    <Directory "/Applications/XAMPP/xamppfiles/apps/healthone/htdocs">
+    <Directory "/Applications/XAMPP/xamppfiles/apps/anytime/htdocs">
         Options Indexes FollowSymLinks ExecCGI Includes
 
         # AllowOverride controls what directives may be placed in .htaccess files.
@@ -82,16 +82,6 @@ NameVirtualHost *:4001
 </VirtualHost>
 ```
 * Restart Apache in de XAMP instance.
-* Verplaats alle inhoud van de repository die je hebt gecloned naar: `/Applications/XAMPP/xamppfiles/apps/healthone/htdocs`
-* Open nu de `/Applications/XAMPP/xamppfiles/apps/healthone/htdocs` in PHPStorm.
+* Verplaats alle inhoud van de repository die je hebt gecloned naar: `/Applications/XAMPP/xamppfiles/apps/anytime/htdocs`
+* Open nu de `/Applications/XAMPP/xamppfiles/apps/anytime/htdocs` in PHPStorm.
 
-### Host file aanpassen
-Met de hostfile kan je de `localhost` of een ip omzetten naar een bepaalde url voor in de browser.
-* Open de host file `/etc/hosts` met `sudo`
-* Voeg de volgende regel onderaan to aan de hostfile
-```
-127.0.0.1           healthone.localhost
-```
-* Opslaan en nu kan je in de browser naar http://healthone.localhost/ en als het goed is dan ziet je nu de website.
-
-Deze stappen zijn gebaseerd op de How-To-Guide die je kan terug vinden in je XAMP dashboard: http://localhost/dashboard/docs/configure-vhosts.html
