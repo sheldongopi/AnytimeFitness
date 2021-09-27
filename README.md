@@ -24,7 +24,7 @@ Listen 4001
 NameVirtualHost *:4001
 <VirtualHost *:80 *:4001>
     DocumentRoot "C:/xampp/apps/anytime/htdocs"
-    ServerName healthone.localhost
+    ServerName anytime.localhost
     <Directory "C:/xampp/apps/anytime/htdocs">
         Options Indexes FollowSymLinks ExecCGI Includes
 
@@ -62,7 +62,7 @@ Listen 4001
 NameVirtualHost *:4001
 <VirtualHost *:80 *:4001>
     DocumentRoot "/Applications/XAMPP/xamppfiles/apps/anytime/htdocs"
-    ServerName healthone.localhost
+    ServerName anytime.localhost
     <Directory "/Applications/XAMPP/xamppfiles/apps/anytime/htdocs">
         Options Indexes FollowSymLinks ExecCGI Includes
 
