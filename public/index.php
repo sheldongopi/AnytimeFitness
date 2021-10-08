@@ -17,6 +17,10 @@ switch ($params[1]) {
         $titleSuffix = ' | Categories';
         include_once "../Templates/categories.php";
         break;
+    case 'crosstrainer':
+        $titleSuffix = ' | Categories';
+        include_once "../Templates/crosstrainer.php";
+        break;
     case 'registreren':
         $titleSuffix = ' | Registreren';
         include_once "../Templates/registreren.php";
